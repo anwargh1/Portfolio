@@ -1,86 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Amiri&family=Caveat&family=Caveat+Brush&family=Chewy&family=Pacifico&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Rambla&family=Reem+Kufi&family=Reggae+One&family=Skranji&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+
 
 }
 
 header {
-    /* background-color: #2c6c90; */
-    color: #000000;
+    background-image: url('./Images/68ec339dd66d8abacb77d89496ed3de6.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     width: 100%;
-    padding: 1rem;
     display: flex;
-    height: 9%;
-    justify-content: space-between;
-    position: absolute;
+    position: fixed;
     z-index: 1;
-
-}
-
-header button a {
-    color: #000000;
-    text-decoration: none;
-    font-family: 'Amiri';
-
-}
-
-header button {
-    background-color: #FFFFFF;
-    border-radius: 3px;
-    border: none;
-    height: 60%;
-    font-size: 1em;
-    margin-top: 1%;
-    margin-right: 5%;
-    transition: transform 0.6s ease;
-
-}
-
-header button:hover {
-    background-color: #2463888e;
-    color: white;
-    transform: scale(1.1);
-
-
-}
-
-header button a:hover {
-    color: white;
-
+    justify-content: space-between;
+    padding: 1.2em 1.5rem;
+    align-items: center;
 }
 
 header h1 {
-    margin: 0;
     font-family: 'Chewy';
     font-size: 1.6em;
     color: #c80078;
     letter-spacing: .1em;
-    /* margin-top: .1%; */
 }
 
 header h1 span {
-    margin: 0;
-    font-family: 'Chewy';
     color: #ffffff;
 }
 
+
 nav ul {
     list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+.menu-icon:disabled {
+    display: none;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 1rem;
     font-family: 'Acme';
     letter-spacing: 1px;
-    font-size: 1.1em;
-    font-weight: 200;
+    font-size: 15px;
     transition: transform 0.6s ease;
-
-
 }
 
 nav ul li:hover {
@@ -88,32 +57,37 @@ nav ul li:hover {
 }
 
 nav ul li a {
-    color: #c80078;
+    color: #2c6c90;
     text-decoration: none;
 }
+
+/* ..................... section css ................*/
 
 .section {
     background-image: url('./Images/68ec339dd66d8abacb77d89496ed3de6.jpg');
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: 100% 100%;
-    height: 33em;
+    height: 30em;
     border-bottom: 1px solid #a6a4a4;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 
 }
 
 .section .one,
-.two,
-.three,
-.four {
+.section .two,
+.section .three,
+.section .four {
     width: 10px;
     height: 10px;
     position: absolute;
     border-radius: 100%;
-    top: 24%;
-
+    top: 28%;
 }
+
 
 .section .one {
     background-color: #2c6c90;
@@ -138,14 +112,14 @@ nav ul li a {
 
 
 .section .one1,
-.two2,
-.three3,
-.four4 {
+.section .two2,
+.section .three3,
+.section .four4 {
     width: 10px;
     height: 10px;
-    position: absolute;
     border-radius: 100%;
-    bottom: 8%;
+    position: absolute;
+    bottom: 12%;
 
 }
 
@@ -171,10 +145,52 @@ nav ul li a {
 
 }
 
+.header-section {
+    position: absolute;
+    top: 12em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.section h2 {
+    font-family: 'Reem Kufi';
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .1em;
+
+}
+
+.section h1 {
+    font-family: 'Reggae One';
+    font-size: 2.9em;
+    letter-spacing: .2em;
+    color: #3F84AB;
+
+}
+
+.section p {
+    font-family: 'Reem Kufi';
+    font-size: 1.5em;
+    letter-spacing: .1em;
+}
+
+.section hr {
+    text-align: center;
+    height: .2em;
+    background-color: #c80078;
+    width: 80%;
+
+}
+
+/* ..................... section1 css ................*/
+
 .section1 {
     background-color: #eaeaea7a;
     padding: .5rem 3em;
-    height: 32em;
     position: relative;
     border-bottom: 1px solid #a6a4a4;
     background: linear-gradient(rgba(228, 228, 228, 0.36) 0%, rgba(222, 220, 255, 0.46) 30%, rgba(96, 125, 139, 0.172) 100%, rgb(96 125 139 / 61%) 100%);
@@ -183,66 +199,24 @@ nav ul li a {
 
 }
 
-.containor {
-    display: flex;
-}
-
-.containor .one {
-    margin-right: 13%;
-}
-
-.section1 div img {
-    height: 70%;
-    width: 100%;
-    z-index: 0;
-    position: relative;
-    left: 5%;
-    bottom: 2%;
-
-
-}
-
 .background-img {
-    z-index: -1;
-    background-color: #2c6b9076;
-    height: 65%;
-    width: 36%;
-    position: absolute;
-    left: 4%;
-    bottom: 10%;
+    height: 70%;
+    position: relative;
 
 }
 
-.hr-bettwen-div {
-    height: 23rem;
-    width: .1rem;
-    background-color: #2c6b90;
-    position: absolute;
-    bottom: 10%;
-    left: 45%;
-}
 
-.containor .one hr {
-    height: .12rem;
-    width: 20rem;
-    background-color: #2c6c90;
-    position: absolute;
-    bottom: 3%;
-    left: 17.5%;
-}
-
-.containor .one h2 {
+.disply-flex-left-right .left-side h2 {
     color: #2c6c90;
     text-align: end;
     position: relative;
-    left: 7%;
     letter-spacing: .5rem;
     font-family: 'Reggae One', cursive;
     top: -2%;
 
 }
 
-.containor .one h2 span {
+.disply-flex-left-right .left-side h2 span {
 
     color: #897F4F;
     font-size: 1.7rem;
@@ -261,48 +235,105 @@ nav ul li a {
 
 }
 
-.containor .one1 {
+.section1-disply-flex .one1 {
     background-color: #2c6c90;
     left: 8%;
 
 }
 
-.containor .two2 {
+.section1-disply-flex .two2 {
     background-color: #2c6c90;
     left: 12%;
 }
 
-.containor .three3 {
+.section1-disply-flex .three3 {
     background-color: #2c6c90;
     left: 16%;
 }
 
-.containor .four4 {
+.section1-disply-flex .four4 {
     background-color: #897F4F;
     left: 4%;
 }
 
-.right-side {
+.disply-flex-left-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.section1 .left-side {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8%;
+    margin-top: 4%;
     position: relative;
-    margin-top: 7%;
-    right: 5%;
+
+
+}
+
+.section1 div img {
+    width: 100%;
+    object-fit: cover;
+    align-self: flex-end;
+    height: 97%;
+
+}
+
+
+.background-img::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    bottom: 0%;
+    left: -3%;
+    height: 5%;
+    background-color: #2c6c90;
+    z-index: -1;
+}
+
+.background-img::after {
+    content: "";
+    position: absolute;
+    width: 3%;
+    bottom: 0%;
+    left: -3%;
+    height: 85%;
+    background-color: #2c6c90;
+}
+
+.right-side {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4%;
+
 }
 
 .right-side div {
-    font-family: 'Rambla';
+    font-family: 'Reem Kufi';
     color: #232323;
     background-color: #6b6b6b0e;
-    font-size: 1em;
-    padding: 2em 3em;
+    padding: 1.5em 2em;
     box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.112);
-    width: 28rem;
-    /* width: 60%; */
+    margin: 1.5em 0;
+
+}
+
+.right-side div:first-child {
+    margin-top: 0;
 }
 
 .section1 h1 {
     color: #2c6c90;
     font-family: 'Reggae One';
-    font-size: 2.55rem;
+    font-size: 2.35rem;
     text-align: center;
     letter-spacing: 1rem;
 }
@@ -340,50 +371,53 @@ nav ul li a {
     bottom: 8%;
 }
 
+
+/* ..................... section2 css ................*/
+
 .section2 {
-    background-color: #eaeaea7a;
-    padding: .5rem 3em;
-    height: 25rem;
-    position: relative;
+    height: 20rem;
     border-bottom: 1px solid #a6a4a4;
     display: flex;
-    background-image: url('./Images/trining.jpg');
+    background-image: url('./Images/067872b73f42772f0ba18a7d9b03626f.jpg');
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: 100% 100%;
-    background-blend-mode: lighten;
-    /* قيمة شفافية الخلفية (قابلة للتعديل) */
-    background-color: rgba(255, 255, 255, 0.5);
+    background-attachment: fixed;
+    position: relative;
+    gap: 4%;
 
 }
 
 .display-skills-grid {
     width: 65%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem 1rem;
-    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4%;
+    align-content: space-around;
+    align-items: center;
 }
 
 .display-skills-flex {
+    width: 48%;
     display: flex;
-    margin-top: 4rem;
+    align-items: center;
+    padding: .5rem;
     align-items: center;
 }
 
 .display-skills-flex img {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 2rem;
-    position: relative;
+    width: 25%;
+    height: 100%;
+    margin-right: 2em;
 }
 
 .display-skills-flex p {
-    width: 8rem;
-    font-family: 'Rambla';
+    width: fit-content;
+    font-family: 'Reem Kufi';
+    font-size: 12px;
     color: #897f4fd3;
     background-color: #e1e1e168;
-    padding: 1rem;
+    padding: 1em;
     text-align: center;
     font-weight: 600;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -433,35 +467,41 @@ nav ul li a {
     color: #897F4F;
     text-align: start;
     position: relative;
-    left: 15%;
+    right: 0%;
     font-family: 'Reggae One', cursive;
-    top: 30%;
-    font-size: 3rem;
+    top: 44%;
+    font-size: 2em;
 }
 
 .right-side-skills h1 span {
     color: #2c6c90;
     text-align: start;
-    position: relative;
+    position: absolute;
     font-family: 'Reggae One', cursive;
-    top: 30%;
-    font-size: 4rem;
-    letter-spacing: 1rem;
+    top: 60%;
+    font-size: 2em;
+    letter-spacing: .1em;
+
+}
+
+.right-side-skills {
+    width: 35%;
+    position: relative;
 
 }
 
 .line {
-    width: 17rem;
-    height: .12rem;
+    width: 80%;
+    height: .5%;
     background-color: #3F84AB;
-    position: relative;
+    position: absolute;
     top: 80%;
-    left: 18%;
+    right: 0;
 
 }
 
 .background {
-    width: 25%;
+    width: 60%;
     height: 100%;
     position: absolute;
     right: 0;
@@ -469,159 +509,137 @@ nav ul li a {
     background-color: #897f4f7e;
 }
 
+/*...................... section 3 ................... */
+
 .section3 {
-    background-color: #eaeaea7a;
-    padding: .5rem 3em;
-    height: 33rem;
-    position: relative;
+    padding: .5rem .5em;
     border-bottom: 1px solid #a6a4a4;
     background: linear-gradient(rgba(228, 228, 228, 0.36) 0%, rgba(222, 220, 255, 0.46) 30%, rgba(96, 125, 139, 0.481) 100%, rgb(96 125 139 / 61%) 100%);
-
-    /* background-image: url('./Images/trining.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-   z-index: -1;
-   background-blend-mode: lighten;
- background-color: rgba(255, 255, 255, 0.5); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
 
 }
 
 
 .section3 h1 {
-    text-align: center;
     color: #246388;
     font-family: 'Reggae One';
     font-size: 2rem;
     letter-spacing: 2px;
+    border-bottom: 2px solid #897F4F;
+    padding: .1em .1em;
+
 }
 
-.section3 .one1,
-.section3 .two2,
-.section3 .three3,
-.section3 .four4,
-.section3 .five5,
-.section3 .six6,
-.section3 .seven7,
-.section3 .eight8 {
+.section3-dot .one1 {
     width: 5px;
     height: 5px;
-    position: absolute;
     border-radius: 100%;
     bottom: 2%;
+    background-color: #897F4F;
+
 
 }
 
-.section3 .one1 {
-    background-color: #d1d8dc;
-    left: 71%;
+.section3-dot {
+    display: flex;
+    gap: 32px;
+}
+
+
+.display-achievements-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4%;
+    padding: .4em 1em;
+}
+
+.display-achievements-flex p::before {
+
+    content: "•";
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 1em;
 
 }
 
-.section3 .two2 {
-    background-color: #d1d8dc;
-    right: 68%;
-}
-
-.section3 .three3 {
-    background-color: #d1d8dc;
-    right: 60%;
-}
-
-.section3 .six6 {
-    background-color: #d1d8dc;
-    right: 52%;
-}
-
-.section3 .seven7 {
-    background-color: #d1d8dc;
-    right: 44%;
-}
-
-.section3 .eight8 {
-    background-color: #d1d8dc;
-    right: 36%;
-
-}
-
-.achievements-line {
-    background-color: #b4b4b4;
-    width: 30%;
-    height: .5%;
-    position: relative;
-    left: 35%;
-    top: -3%;
-}
-
-.display-achievements-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0rem 1rem;
-    height: fit-content;
-    margin-left: 8%;
-    margin-top: 1%;
-
-}
-
-.display-achievements-grid div {
+.display-achievements-flex div {
     background-color: #ffffff80;
-    width: 80%;
-    height: 85%;
+    width: 30%;
     box-sizing: border-box;
-    padding: .2rem .2rem .5rem .2rem;
+    padding: .2em .2rem 1em .2rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-
+    flex-grow: 1;
+    ;
 }
 
-.display-achievements-grid li {
-    margin-top: 1.5%;
-    position: absolute;
-    margin-left: .5%;
 
-}
-
-.display-achievements-grid p {
-    position: relative;
-    left: 5%;
+.display-achievements-flex p {
     font-family: 'Reem Kufi';
-    width: 90%;
-
-    padding: .2rem .2rem 0rem .2rem;
-
+    text-align: start;
+    margin: .1em .5em;
+    font-size: .8em;
 
 
 }
 
-.display-achievements-grid img {
+.display-achievements-flex img {
     width: 100%;
-    height: 60%;
+    object-fit: cover;
 }
 
+
+/* ........................ section 4 ...................... */
 .section4 {
-    background-color: #F4F4F4;
-    padding: .5rem 3em;
-    height: 30rem;
+    padding: 1.5em 1em;
     position: relative;
     border-bottom: 1px solid #a6a4a4;
-    background: linear-gradient(rgba(228, 228, 228, 0.36) 0%, rgba(222, 220, 255, 0.46) 30%,
-            rgb(96 125 139 / 35%) 100%, rgb(96 125 139 / 61%) 100%);
     background-image: url('./Images/trining.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: -1;
     background-blend-mode: lighten;
-    /* قيمة شفافية الخلفية (قابلة للتعديل) */
     background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .section4 h1 {
-    position: absolute;
-    top: 62%;
-    left: 5%;
     font-family: 'Reggae One', cursive;
     color: #897F4F;
     font-size: 2.3em;
+    align-self: flex-end;
+    position: relative;
+    left: 4%;
+    width: 40%;
+}
 
+.section4 h1::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    bottom: -16%;
+    left: -3%;
+    height: 2%;
+    background-color: #2c6c90;
+    z-index: -1;
+
+}
+
+.section4 h1::after {
+    content: "";
+    position: absolute;
+    width: 1%;
+    bottom: 4%;
+    left: -8%;
+    height: 150%;
+    background-color: #2c6c90;
+    z-index: -1;
 
 }
 
@@ -631,19 +649,49 @@ nav ul li a {
 
 }
 
-.frontEnd img {
-    width: 25%;
-    height: 22%;
-    margin-right: 8%;
-    margin-top: 5%;
+.display-interests-flex {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    flex-grow: 1;
 
 
 }
 
+.frontEnd img {
+    width: 32.5%;
+    margin-top: 16px;
+}
 
+.frontEnd {
+    font-family: 'Reggae One', cursive;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
 
-.frontEnd .display-img-flex,
-.backEnd .display-img-flex {
+.backEnd {
+    font-family: 'Reggae One', cursive;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.frontEnd h3,
+.backEnd h3 {
+    border-bottom: 2px solid #897F4F;
+    width: 80%;
+    align-self: center;
+    color: #897F4F;
+}
+
+.display-img-flex {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -651,293 +699,159 @@ nav ul li a {
 }
 
 .backEnd img {
-    width: 23%;
-    height: 20%;
-    margin-right: 13%;
-    margin-top: 2%;
-}
-
-.section4 .first {
-    width: .3%;
-    height: 60%;
-    background-color: #2c6b90;
-    position: absolute;
-    left: 2%;
-    bottom: 12%;
-
-}
-
-.section4 .second {
-    width: 30%;
-    height: .7%;
-    background-color: #2c6b90;
-    position: absolute;
-    right: 4%;
-    top: 8%;
-}
-
-.section4 .third {
-    width: .3%;
-    height: 60%;
-    background-color: #2c6b90;
-    position: absolute;
-    right: 2%;
-    top: 12%;
-}
-
-.section4 .fourth {
-    width: 30%;
-    height: .7%;
-    background-color: #2c6b90;
-    position: absolute;
-    left: 4%;
-    bottom: 8%;
-}
-
-
-.frontEnd {
-    position: absolute;
-    left: 25%;
-    top: 15%;
-    font-family: 'Reggae One', cursive;
-    width: 20%;
-}
-
-.frontEnd h2,
-.backEnd h2 {
-    width: 8rem;
-    color: #000000d3;
-    background-color: #e1e1e168;
-    padding: .5rem;
-    text-align: center;
-    font-weight: 600;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
-    font-size: 1.3em;
-
-}
-
-.frontEnd h2 {
-    margin-left: 18%;
-}
-
-.backEnd h2 {
-    margin-left: 24%;
-
-}
-
-
-.backEnd {
-    position: absolute;
-    left: 55%;
-    top: 15%;
-    font-family: 'Reggae One', cursive;
-    width: 30%;
+    width: 45%;
+    margin-top: 16px;
 }
 
 .section4 .one1,
 .section4 .two2,
 .section4 .three3,
 .section4 .four4 {
-    width: 10px;
-    height: 10px;
-    position: absolute;
+    width: 5px;
+    height: 5px;
     border-radius: 100%;
-    bottom: 8%;
+    background-color: #7f8080;
 
 }
 
-.section4 .one1 {
-    background-color: #2c6c90;
-    right: 8%;
-
-}
-
-.section4 .two2 {
-    background-color: #2c6c90;
-    right: 12%;
-}
-
-.section4 .three3 {
-    background-color: #2c6c90;
-    right: 16%;
+.section4-dot {
+    display: flex;
+    flex-direction: column;
+    gap: 12%;
 }
 
 .section4 .four4 {
     background-color: #897F4F;
-    right: 4%;
-
 }
 
+/* ....................... section 5 ..................*/
 
 .section5 {
-    background-color: #eaeaea7a;
-    padding: .5rem 3em;
-    height: 27rem;
-    position: relative;
+    padding: 2rem .1em;
     border-bottom: 1px solid #a6a4a4;
     background-image: url('./Images/trining.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-blend-mode: lighten;
     background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
 }
-
 
 .training-backgroundw {
     background-color: #897f4f7d;
     height: 100%;
-    width: 20%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 90%;
     z-index: 0;
-
 }
 
 .section5 h1 {
-    position: absolute;
-    top: 10%;
-    left: 5%;
     font-family: 'Reggae One';
     color: #2c6c90;
-    font-size: 2.3em;
+    font-size: 2.5em;
     letter-spacing: .1rem;
+    position: relative;
+    left: 8%;
+    top: 23px;
 }
 
-.training-line {
-    background-color: #246388;
-    height: .5%;
-    width: 3%;
-    position: absolute;
-    top: 12%;
-    left: 7%;
+.section5-img {
+    align-self: center;
+    width: 35%;
 }
 
 .section5 img {
-    position: absolute;
-    left: 23%;
-    width: 30%;
-    height: 70%;
-    top: 15%;
+    width: 90%;
 }
 
 .training-p {
-    position: absolute;
-    left: 58%;
     font-family: 'Reem Kufi';
-    top: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
+.training-p-img {
+    font-family: 'Reem Kufi';
+    width: 70%;
+    display: flex;
+    gap: 16px;
+    margin: 24px;
 }
 
 .training-p p {
     background-color: #eaeaea92;
-    width: 75%;
-    padding: 1rem 2rem;
+    padding: 1em 1.5em;
+    font-size: .8em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-
-
-
 }
 
-.section5 .one-right,
-.section5 .two-right,
-.section5 .three-right,
-.section5 .four-right {
-    width: .5rem;
-    height: .5rem;
-    position: absolute;
-    border-radius: 100%;
-    right: 2%;
-
-}
-
-.section5 .one-right {
-    background-color: #2c6c90;
-    bottom: 48%;
-
-}
-
-.section5 .two-right {
-    background-color: #2c6c90;
-    bottom: 56%;
-}
-
-.section5 .three-right {
-    background-color: #2c6c90;
-    bottom: 64%;
-}
-
-.section5 .four-right {
-    background-color: #897F4F;
-    bottom: 40%;
-}
 
 .section6 {
-    background-color: #eaeaea7a;
-    padding: .5rem 3em;
-    height: 25rem;
-    position: relative;
+    padding: .5rem 1em;
     border-bottom: 1px solid #a6a4a4;
     background-image: url('./Images/9f0502adb3d51a6c3ae6c4b5a2df1f23.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-blend-mode: lighten;
     background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    gap:28px
+
+}
+.section6 .left-side{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+form{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
 
 }
 
 .section6 h2 {
-    margin-left: 5%;
     font-family: 'Reggae One';
     color: #897F4F;
     font-size: 2em;
     letter-spacing: .1rem;
-}
-
-.contactMe-line {
-    background-color: #246388;
-    height: .5%;
-    width: 3%;
-    position: absolute;
-    top: 14%;
-    left: 5%;
+    border-bottom: 2px solid #c80078;
 }
 
 .contactMe-p {
-    position: absolute;
-    left: 10%;
     font-family: 'Reem Kufi';
-    top: 25%;
 }
 
 .contactMe-p p {
-    /* background-color: #eaeaea50; */
-    width: 40%;
+    width: 100%;
     padding: .1rem 1rem;
-    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
-
+    margin-bottom: 8px;
+    font-size: .89em;
 }
 
-.section6 form {
-    position: absolute;
-    left: 50%;
-    top: 14%;
-    width: 40%;
-}
+
 
 input {
-    width: 100%;
-    height: 7vh;
-    margin-bottom: 5%;
+    width: 90%;
+    height: 30px;
     background-color: #d9d9d953;
     border: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 textarea {
-    width: 100%;
-    height: 25vh;
+    width: 90%;
+    height: 100px;
     margin-bottom: 5%;
     background-color: #d9d9d953;
     border: none;
@@ -966,9 +880,8 @@ form button {
     color: white;
     border: none;
     padding: .5em;
-    position: relative;
-    left: 43%;
     cursor: pointer;
+    width: 70%;
     transition: transform 0.6s ease;
 }
 
@@ -976,13 +889,18 @@ button:hover {
     transform: scale(1.1);
 }
 
-.section6 img {
-    width: 2.5%;
-    height: 2%;
-    position: relative;
-    margin-top: 16%;
-    left: 15%;
-    margin-left: 1%;
+.social-img{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+    justify-content: center;
+}
+.social-img a{
+    width: 8%;
+
+}
+.social-img img {
+    width: 90%;
     transition: transform 0.6s ease;
 }
 
@@ -990,56 +908,6 @@ button:hover {
     transform: scale(1.1);
 
 }
-
-
-.section h2 {
-    font-family: 'Reem Kufi';
-    font-size: 1.6em;
-    margin: 0px;
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
-    top: 12.5rem;
-    font-weight: 300;
-    letter-spacing: .1rem;
-
-}
-
-.section h1 {
-    font-family: 'Reggae One';
-    font-size: 2.9rem;
-    letter-spacing: 15px;
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
-    top: 10rem;
-    color: #3F84AB;
-
-}
-
-.section p {
-    font-family: 'Reem Kufi';
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
-    top: 7.5rem;
-    letter-spacing: .1rem;
-
-
-}
-
-.section hr {
-    font-size: 1.2rem;
-    text-align: center;
-    position: relative;
-    top: 8rem;
-    height: .1rem;
-    background-color: #c80078;
-    width: 40%;
-
-}
-
 
 footer {
     background-color: #333;
@@ -1050,63 +918,418 @@ footer {
 
 }
 
+@media (max-width: 968px) {
 
-@media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: center;
+    .section1 h1 {
+        font-size: 2em;
+        letter-spacing: .1rem;
     }
-  
-    nav ul {
-      margin-top: 1rem;
+
+    .right-side div li {
+        font-size: 0.8em;
     }
-  
-    header button {
-      margin-top: 1rem;
-      margin-right: 0;
+
+    .section4 h1 {
+
+        font-size: 2em;
+
     }
-  
-    section {
-      padding: 1rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+    header nav ul.menu-items {
+        display: none;
     }
-  
-    section h1 {
-      font-size: 1.5em;
+
+    nav {
+        display: flex;
+        flex-direction: column;
     }
-  
-    .display-skills-grid,
-    .display-achievements-grid,
-    .display-interests-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    header {
-      padding: 2rem;
-    }
-  
-    header h1 {
-      font-size: 2.5em;
-    }
-  
+
     nav ul li {
-      font-size: 1.2em;
+        font-family: 'Acme';
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 8px;
+        margin-right: 12px;
+        transition: transform 0.6s ease;
+        border-bottom: 2px solid black;
     }
-  
-    section {
-      padding: 2rem;
-    }
-  
-    section h1 {
-      font-size: 3em;
-    }
-  }
 
-  html {
-    scroll-behavior: smooth;
-  }
 
-  section {
-    scroll-snap-align: start;
-  }
+    header .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px auto;
+    }
+
+    header nav.show-menu ul.menu-items {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        position: fixed;
+        right: 0%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        top: 6%;
+
+    }
+
+    /* section 2 */
+    .right-side-skills h1 {
+        left: 8%;
+        top: 55%;
+        font-size: 1.7em;
+    }
+
+    .right-side-skills h1 span {
+        top: 65%;
+        font-size: 1.5em;
+        letter-spacing: .1em;
+
+    }
+
+    .section4 h1 {
+
+        font-size: 1.8em;
+
+    }
+
+    .section5 h1 {
+        font-size: 2em;
+        position: unset;
+        margin-top: 18px;
+        border-bottom: 2px solid #6666667d;
+        width: 120%;
+
+    }
+
+    .section5 {
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        gap: 4px;
+        padding: .5rem .1em;
+
+
+    }
+
+    .training-p-img {
+        width: 90%;
+    }
+
+    .training-backgroundw {
+        background-color: #ffffff00;
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .social-img{
+        display: flex;
+        flex-direction: row;
+        gap:12px;
+        width:30%;
+    
+    }
+
+    .social-img a {
+        width:20%;
+        height: 100%;
+    }
+    .social-img img {
+        width: 100%;
+        transition: transform 0.6s ease;
+    }
+    .contactMe-p  {
+        width: 99%;
+    }
+    .contactMe-p p {
+        font-size: .8em;
+    }
+
+   
+}
+
+
+@media only screen and (max-width: 540px) {
+
+
+    header nav ul.menu-items {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        font-family: 'Acme';
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 8px;
+        margin-right: 12px;
+        transition: transform 0.6s ease;
+    }
+
+    header .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px auto;
+    }
+
+
+    /* ..................... section css ................*/
+
+    .section h2 {
+        font-size: 1.3em;
+
+    }
+
+    .section h1 {
+        font-size: 2em;
+        letter-spacing: .15em;
+
+    }
+
+    .section p {
+        font-size: 1.2em;
+    }
+
+    /* ..................... section1 css ................*/
+
+    .disply-flex-left-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        gap: 32px;
+        flex-grow: 1;
+        margin-top: 4%;
+    }
+
+    .section1 .left-side {
+        width: 100%;
+        height: fit-content;
+    }
+
+
+    .right-side {
+        width: 100%;
+
+    }
+
+    .right-side div {
+        margin: 1.2em 0;
+    }
+
+    /* section 2 */
+    .section2 {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .right-side-skills {
+        width: 100%;
+        position: relative;
+    }
+
+    .display-skills-flex {
+        justify-content: center;
+
+    }
+
+    .right-side-skills h1 span {
+        color: #2c6c90;
+        text-align: start;
+        position: initial;
+        font-family: 'Reggae One', cursive;
+        top: 60%;
+        font-size: 1.3em;
+        letter-spacing: .1em;
+    }
+
+    .right-side-skills h1 {
+        margin-left: 4%;
+        position: initial;
+
+    }
+
+    .display-skills-grid {
+        width: 100%;
+        margin: 8% .1%;
+    }
+
+    /*............. section 3  ...............*/
+
+    .display-achievements-flex {
+        flex-direction: column;
+
+    }
+
+    .display-achievements-flex div {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .section3 h1 {
+        font-size: 1.8em;
+        width: 100%;
+    }
+
+    .section4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+
+    }
+
+    .section4-dot {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .display-interests-flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 32px;
+
+
+    }
+
+    .section4 h1 {
+        font-size: 1.9em;
+        align-self: self-start;
+        display: flex;
+        gap: 12px;
+    }
+
+
+
+    .section4 h1::after {
+        height: 100%;
+    }
+
+    .training-p-img {
+        flex-direction: column;
+    }
+
+  
+
+    .training-p {
+        width: 100%;
+    }
+
+    .section5-img {
+        align-self: center;
+        width: 80%;
+    }
+
+    .section6 {
+       flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap:12px;
+        position: relative;
+    
+    }
+
+    .section6 .left-side{
+        width: 90%;
+        gap: 32px;
+    }
+    
+    form{
+        width:90%;
+     margin-bottom: 15%;
+    
+    }
+    
+    .section6 h2 {
+        font-family: 'Reggae One';
+        color: #897F4F;
+        font-size: 2em;
+        letter-spacing: .1rem;
+    }
+
+    .social-img{
+        display: flex;
+        flex-direction: row;
+        gap:12px;
+        width:30%;
+        position: absolute;
+        bottom: 4px;
+    
+    }
+
+    .social-img a {
+        width:15%;
+        height: 100%;
+    }
+    .social-img img {
+        width: 100%;
+        transition: transform 0.6s ease;
+    }
+    .contactMe-p  {
+        width: 96%;
+    }
+    .contactMe-p p {
+        font-size: .8em;
+    }
+    footer {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+
+    .display-skills-grid {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .display-skills-flex {
+        width: 100%;
+        justify-content: initial;
+        margin-left: 12px;
+
+    }
+
+    .display-skills-flex img {
+        width: 10%;
+        margin-right: 2em;
+    }
+
+    .section4 h1 {
+        font-size: 1.6em;
+    }
+
+    .frontEnd {
+        width: 70%;
+    }
+
+    .backEnd {
+        width: 70%;
+    }
+    .section5 h1 {
+        font-size: 1.2em;
+    
+
+    }
+    footer{
+        font-size: .5em;
+    }
+}
